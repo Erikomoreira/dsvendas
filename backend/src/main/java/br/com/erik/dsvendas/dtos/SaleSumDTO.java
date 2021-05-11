@@ -7,14 +7,14 @@ import java.io.Serializable;
 public class SaleSumDTO implements Serializable {
 
     private String sellerName;
-    private Double sum;
+    private Double sumAmount;
 
     public SaleSumDTO() {
     }
 
     public SaleSumDTO(Seller seller, Double sum) {
         sellerName = seller.getName();
-        this.sum = sum;
+        this.sumAmount = sum;
     }
 
     public String getSellerName() {
@@ -25,11 +25,11 @@ public class SaleSumDTO implements Serializable {
         this.sellerName = sellerName;
     }
 
-    public Double getSum() {
-        return sum;
+    public Double getSumAmount() {
+        return sumAmount;
     }
 
-    public void setSum(Double sum) {
-        this.sum = sum;
+    public void setSumAmount(Double sumAmount) {
+        this.sumAmount = sumAmount;
     }
 }
